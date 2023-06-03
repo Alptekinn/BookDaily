@@ -3,6 +3,7 @@ import { Button, Text, TextInput, View, Alert } from "react-native";
 import styles from "../styles";
 import Register from "./registerPage";
 import { useNavigation } from '@react-navigation/native'
+import Home from "./homePage";
 
 const Login = () => {
   const [text, onChangeText] = React.useState("");
@@ -18,11 +19,11 @@ const Login = () => {
         placeholder="Kullanıcı Adı"
       />
       <TextInput
+        secureTextEntry={true}
         style={styles.input}
         onChangeText={onChangePass}
         value={pass}
         placeholder="Şifre"
-        // keyboardType="numeric"
       />
       <View style={styles.fixToText}>
         <Button
@@ -32,7 +33,7 @@ const Login = () => {
         />
         <Button
           title="Giriş Yap"
-          onPress={() => Alert.alert('Giriş yapamazsın ask')}
+          onPress={() => navigation.navigate('Home')}
         />
       </View>
     </View>

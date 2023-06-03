@@ -39,6 +39,7 @@ const Register = () => {
         placeholder="Kullanıcı Adı"
       />
       <TextInput
+        secureTextEntry={true}
         style={styles.input}
         onChangeText={onChangePass}
         value={pass}
