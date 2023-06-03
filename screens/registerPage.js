@@ -8,9 +8,25 @@ const Register = () => {
   const [name, onChangeName] = React.useState("");
   const [surname, onChangeSurname] = React.useState("");
   const [mail, onChangeMail] = React.useState("");
-  const [text, onChangeText] = React.useState("");
+  const [username, onChangeText] = React.useState("");
   const [pass, onChangePass] = React.useState("");
   const navigation = useNavigation();
+
+  const handleSignup = () => {
+    const newUser = {
+      id: users.length + 1,
+      ad: 'name',
+      soyad: surname,
+      e_posta: mail,
+      kullaniciAdi: username,
+      sifre: pass,
+    };
+    
+  users.push(newUser);
+  Alert.alert("Kayıt başarılı")
+  navigation.navigate('Login')
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Kayıt Sayfası</Text>
@@ -48,7 +64,7 @@ const Register = () => {
       <View style={styles.fixToText}>
         <Button
           title="Kayıt Ol"
-          onPress={() => navigation.navigate("Login")}
+          onPress={() => handleSignup()}
         />
         <Button
           color="#555"

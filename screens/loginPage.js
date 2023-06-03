@@ -8,6 +8,17 @@ import Home from "./homePage";
 const Login = () => {
   const [text, onChangeText] = React.useState("");
   const [pass, onChangePass] = React.useState("");
+  const handleLogin = () =>{
+    const foundUser = userLogin(text, pass);
+    if (foundUser) {
+      navigation.navigate('Home')
+    }
+    else{
+      Alert.alert('Kullanıcı Adı şifre yanlış')
+    }
+  }
+
+
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
@@ -33,7 +44,7 @@ const Login = () => {
         />
         <Button
           title="Giriş Yap"
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => handleLogin()}
         />
       </View>
     </View>
