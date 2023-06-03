@@ -3,6 +3,7 @@ import { View, Text, TextInput, Button, Alert } from "react-native";
 import styles from "../styles";
 import { useNavigation } from "@react-navigation/native";
 import Login from "./loginPage";
+import users from "../Data/UserData";
 
 const Register = () => {
   const [name, onChangeName] = React.useState("");
@@ -15,7 +16,7 @@ const Register = () => {
   const handleSignup = () => {
     const newUser = {
       id: users.length + 1,
-      ad: 'name',
+      ad: name,
       soyad: surname,
       e_posta: mail,
       kullaniciAdi: username,
@@ -51,7 +52,7 @@ const Register = () => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
+        value={username}
         placeholder="Kullanıcı Adı"
       />
       <TextInput

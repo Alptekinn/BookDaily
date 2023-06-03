@@ -4,13 +4,16 @@ import styles from "../styles";
 import Register from "./registerPage";
 import { useNavigation } from '@react-navigation/native'
 import Home from "./homePage";
+import {userLogin} from '../Helper/LoginHelper';
 
 const Login = () => {
   const [text, onChangeText] = React.useState("");
   const [pass, onChangePass] = React.useState("");
+
   const handleLogin = () =>{
     const foundUser = userLogin(text, pass);
     if (foundUser) {
+      
       navigation.navigate('Home')
     }
     else{
@@ -30,7 +33,7 @@ const Login = () => {
         placeholder="Kullanıcı Adı"
       />
       <TextInput
-        secureTextEntry={true}
+        //secureTextEntry={true}
         style={styles.input}
         onChangeText={onChangePass}
         value={pass}
