@@ -13,7 +13,6 @@ const Login = () => {
   const handleLogin = () =>{
     const foundUser = userLogin(text, pass);
     if (foundUser) {
-      
       navigation.navigate('Home')
     }
     else{
@@ -21,10 +20,9 @@ const Login = () => {
     }
   }
 
-
   const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <View style={styles.loginContainer}>
       <Text style={styles.title}>Giriş Sayfası</Text>
       <TextInput
         style={styles.input}

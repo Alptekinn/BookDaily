@@ -12,8 +12,8 @@ const users = [
     "ad": "Ayşe",
     "soyad": "Demir",
     "e_posta": "ayse.demir@example.com",
-    "kullaniciAdi": "ayse.demir",
-    "sifre": "ayse123"
+    "kullaniciAdi": "Aa",
+    "sifre": "Aa"
   },
   {
     "id": 3,

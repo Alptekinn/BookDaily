@@ -29,7 +29,7 @@ const Register = () => {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={styles.loginContainer}>
       <Text style={styles.title}>Kayıt Sayfası</Text>
       <TextInput
         style={styles.input}
