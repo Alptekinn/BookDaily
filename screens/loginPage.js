@@ -45,7 +45,8 @@ const Login = () => {
         />
         <Button
           title="Giriş Yap"
-          onPress={() => handleLogin()}
+          onPress={() => navigation.navigate('Home') }
+          //onPress={() => handleLogin()}
         />
       </View>
     </View>

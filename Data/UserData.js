@@ -5,15 +5,17 @@ const users = [
     "soyad": "Yılmaz",
     "e_posta": "ahmet.yilmaz@example.com",
     "kullaniciAdi": "ahmet123",
-    "sifre": "sifre123"
+    "sifre": "sifre123",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 2,
     "ad": "Ayşe",
     "soyad": "Demir",
     "e_posta": "ayse.demir@example.com",
-    "kullaniciAdi": "Aa",
-    "sifre": "Aa"
+    "kullaniciAdi": "ayse.demir",
+    "sifre": "ayse123",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@ const users = [
     "soyad": "Kaya",
     "e_posta": "mehmet.kaya@example.com",
     "kullaniciAdi": "mehmetk",
-    "sifre": "sifre12345"
+    "sifre": "sifre12345",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@ const users = [
     "soyad": "Aydın",
     "e_posta": "fatma.aydin@example.com",
     "kullaniciAdi": "fatmaaydin",
-    "sifre": "fatma123"
+    "sifre": "fatma123",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@ const users = [
     "soyad": "Arslan",
     "e_posta": "mustafa.arslan@example.com",
     "kullaniciAdi": "m.arslan",
-    "sifre": "mustafa123"
+    "sifre": "mustafa123",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@ const users = [
     "soyad": "Kara",
     "e_posta": "zeynep.kara@example.com",
     "kullaniciAdi": "zeynepk",
-    "sifre": "sifre456"
+    "sifre": "sifre456",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@ const users = [
     "soyad": "Turan",
     "e_posta": "ali.turan@example.com",
     "kullaniciAdi": "alitur",
-    "sifre": "sifre789"
+    "sifre": "sifre789",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@ const users = [
     "soyad": "Can",
     "e_posta": "selin.can@example.com",
     "kullaniciAdi": "selinc",
-    "sifre": "sifre1234"
+    "sifre": "sifre1234",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 9,
@@ -69,7 +77,9 @@ const users = [
     "soyad": "Korkmaz",
     "e_posta": "omer.korkmaz@example.com",
     "kullaniciAdi": "okorkmaz",
-    "sifre": "sifre5678"
+    "sifre": "sifre5678",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
+
   },
   {
     "id": 10,
@@ -77,7 +87,8 @@ const users = [
     "soyad": "Güler",
     "e_posta": "elif.guler@example.com",
     "kullaniciAdi": "elifg",
-    "sifre": "elif12345"
+    "sifre": "elif12345",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 11,
@@ -85,7 +96,8 @@ const users = [
     "soyad": "Acar",
     "e_posta": "hakan.acar@example.com",
     "kullaniciAdi": "hakana",
-    "sifre": "sifre2468"
+    "sifre": "sifre2468",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 12,
@@ -93,7 +105,8 @@ const users = [
     "soyad": "Köse",
     "e_posta": "aysel.kose@example.com",
     "kullaniciAdi": "ayselk",
-    "sifre": "aysel123"
+    "sifre": "aysel123",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 13,
@@ -101,7 +114,8 @@ const users = [
     "soyad": "Tuncer",
     "e_posta": "ercan.tuncer@example.com",
     "kullaniciAdi": "ercant",
-    "sifre": "sifre987"
+    "sifre": "sifre987",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 14,
@@ -109,7 +123,8 @@ const users = [
     "soyad": "Kurt",
     "e_posta": "merve.kurt@example.com",
     "kullaniciAdi": "mervek",
-    "sifre": "sifre531"
+    "sifre": "sifre531",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   },
   {
     "id": 15,
@@ -117,7 +132,8 @@ const users = [
     "soyad": "Şahin",
     "e_posta": "cem.sahin@example.com",
     "kullaniciAdi": "cemsahin",
-    "sifre": "sifre159"
+    "sifre": "sifre159",
+    "profileImage": "https://doodleipsum.com/600?shape=circle"
   }
 ]
 export default users;

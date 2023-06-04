@@ -21,6 +21,7 @@ const Register = () => {
       e_posta: mail,
       kullaniciAdi: username,
       sifre: pass,
+      profileImage :"https://doodleipsum.com/600?shape=circle"
     };
     
   users.push(newUser);
