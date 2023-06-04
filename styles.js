@@ -4,15 +4,14 @@ const styles = StyleSheet.create({
   loginContainer: {
     marginHorizontal: 60,
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
-  homeContainer:{
-    flex:1,
-    marginHorizontal:20,
-    marginVertical:10,
+  homeContainer: {
+    flex: 1,
+    marginHorizontal: 20,
+    marginVertical: 10,
   },
   input: {
-    
     height: 40,
     marginBottom: 30,
     borderWidth: 1,
@@ -23,45 +22,66 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  title:{
+  title: {
     fontSize: 30,
-    fontWeight: 'bold',
-    textAlign:'center',
-    marginBottom:30,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 30,
   },
-  cardArea:{
-    flex:1,
-    width:'100%',
-    height:140,
-    backgroundColor:'#FFF',
-    borderRadius:10,
-    marginVertical:10,
-    padding:10
+  cardArea: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: "#FFF",
+    borderRadius: 10,
+    marginVertical: 10,
+    padding: 10,
   },
-  row:{
-    flexDirection:'row',
+  img: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
   },
-  img:{
-    width:100,
-    height:100,
-    borderRadius:50,
+  notificationCard: {
+    width: "100%",
+    height: 100,
+    backgroundColor: "#FFF",
+    borderRadius: 10,
+    marginVertical: 10,
+    padding: 10,
   },
-  notificationCard:{
-    width:'100%',
-    height:100,
-    backgroundColor:'#FFF',
-    borderRadius:10,
-    marginVertical:10,
-    padding:10
+  verticalCenter: {
+    verticalAlign: "middle",
   },
-  verticalCenter:{
-    verticalAlign:'middle',
+  icnBetween: {
+    marginHorizontal: 10,
   },
-  icnBetween:{
-    marginHorizontal:30,
-    marginVertical:10
-
-  }
+  righ: {
+    marginRight: 15,
+  },
+  row: {
+    flexDirection: "row",
+  },
+  flex2: {
+    flex: 2,
+  },
+  flex1: {
+    flex: 1,
+  },
+  center: {
+    justifyContent: "center",
+  },
+  between: {
+    justifyContent: "space-between",
+  },
+  smallProfile: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+  },
+  verticalSpace: {
+    marginTop: 10,
+  },
+  middle: { justifyContent: "center", alignItems: "center" },
 });
 
 export default styles;
