@@ -1,11 +1,10 @@
 import React from "react";
 import { View,Text } from "react-native";
+import NotificationCard from "../components/NotificationCard";
 
 const Notifications = () => {
     return(
-        <View>
-            <Text>wşğdepl</Text>
-        </View>
+        <NotificationCard />
     )
 }
 export default Notifications;

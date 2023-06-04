@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   loginContainer: {
     marginHorizontal: 60,
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
   },
   homeContainer:{
     flex:1,
@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     marginVertical:10,
   },
   input: {
+    
     height: 40,
     marginBottom: 30,
     borderWidth: 1,
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
     marginBottom:30,
   },
   cardArea:{
+    flex:1,
     width:'100%',
     height:250,
     backgroundColor:'#FFF',
@@ -36,8 +38,29 @@ const styles = StyleSheet.create({
     marginVertical:10,
     padding:10
   },
-  cardProfil:{
+  row:{
     flexDirection:'row',
+  },
+  img:{
+    width:100,
+    height:100,
+    borderRadius:50,
+  },
+  notificationCard:{
+    width:'100%',
+    height:100,
+    backgroundColor:'#FFF',
+    borderRadius:10,
+    marginVertical:10,
+    padding:10
+  },
+  verticalCenter:{
+    verticalAlign:'middle',
+  },
+  icnBetween:{
+    marginHorizontal:30,
+    marginVertical:10
+
   }
 });
 
