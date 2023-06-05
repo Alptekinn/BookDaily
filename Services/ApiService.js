@@ -3,14 +3,14 @@ const app = express();
 const port = 3050;
 
 const fs = require('fs');
-const booksData = fs.readFileSync('Book.json');
+const booksData = fs.readFileSync('../Data/Book.json');
 let books = JSON.parse(booksData);
 
-const User = fs.readFileSync('User.json','utf-8');
+const User = fs.readFileSync('../Data/User.json','utf-8');
 let users = JSON.parse(User);
 
 
-const Post = fs.readFileSync('Post.json');
+const Post = fs.readFileSync('../Data/Post.json');
 let post= JSON.parse(Post);
 
 app.use(express.json());
@@ -37,7 +37,7 @@ app.post('/register', (req, res) => {
   };
     users.push(newUserWithId);
 
-    fs.writeFileSync('User.json', JSON.stringify(users));
+    fs.writeFileSync('../Data/User.json', JSON.stringify(users));
   
     res.status(200).json({ message: 'Kullanıcı başarıyla kaydedildi.', user: newUserWithId });
   });
@@ -61,6 +61,17 @@ users = users.map(user => {
 app.get('/users', (req, res) => {
     res.json(users);
 });
+
+
+app.post('/notifications', (req, res) => {
+    const notificationData = req.body;
+  
+    // Bildirim verilerini kullanarak gerekli işlemleri yapın
+    // Örneğin, bildirimi alıcı kullanıcılara göndermek için Firebase Cloud Messaging (FCM) gibi bir hizmeti kullanabilirsiniz
+  
+    res.status(200).json({ message: 'Bildirim başarıyla gönderildi.' });
+  });
+
 
 app.listen(port, () => {
     console.log(`API servisi ${port} numaralı portta çalışıyor.`);

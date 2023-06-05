@@ -5,6 +5,8 @@ import Register from "./registerPage";
 import { useNavigation } from '@react-navigation/native'
 import Home from "./homePage";
 import { userlogin } from "../Services/AccountService";
+import { triggerNotification } from "../Services/NotificationService";
+
 
 const Login = () => {
   const [text, onChangeText] = React.useState("");
@@ -15,6 +17,7 @@ const Login = () => {
     userlogin(text,pass)
     .then(data=>  {
       Alert.alert("Başarılı")
+      triggerNotification();
       navigation.navigate('Home')
     })
     .catch(error => {
