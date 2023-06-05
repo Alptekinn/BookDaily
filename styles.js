@@ -28,6 +28,10 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 30,
   },
+  smallTitle:{
+    fontSize:16,
+    fontWeight:'bold'
+  },
   cardArea: {
     flex: 1,
     width: "100%",
@@ -43,11 +47,17 @@ const styles = StyleSheet.create({
   },
   notificationCard: {
     width: "100%",
-    height: 100,
     backgroundColor: "#FFF",
     borderRadius: 10,
     marginVertical: 10,
     padding: 10,
+  },
+  profileCard: {
+    width: "100%",
+    height: 150,
+    backgroundColor: "#FFF",
+    borderRadius: 10,
+    padding: 15,
   },
   verticalCenter: {
     verticalAlign: "middle",
@@ -55,8 +65,12 @@ const styles = StyleSheet.create({
   icnBetween: {
     marginHorizontal: 10,
   },
-  righ: {
+  marginR15: {
     marginRight: 15,
+  },
+  marginR45: {
+    marginRight: 45,
+    marginLeft:10,
   },
   row: {
     flexDirection: "row",

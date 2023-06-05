@@ -9,12 +9,12 @@ const Card = () => {
       <View style={[styles.row, styles.flex1, styles.between]}>
         <View style={[styles.row]}>
           <Image style={styles.smallProfile} source={require("../assets/favicon.png")} />
-          <Text style={styles.verticalCenter}> İsim yazılacak ZeyAlp</Text>
+          <Text style={[styles.verticalCenter, styles.smallTitle]}> İsim yazılacak ZeyAlp</Text>
         </View>
 
         <View>
           <Image
-            style={[styles.righ, styles.smallProfile]}
+            style={[styles.marginR15, styles.smallProfile]}
             source={require("../assets/favicon.png")}
           />
         </View>

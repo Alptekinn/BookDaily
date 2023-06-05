@@ -1,11 +1,10 @@
 import React from "react";
 import { View,Text } from "react-native";
+import BookCard from "../components/BookCard";
 
 const Book = () => {
     return(
-        <View>
-            <Text>wşğdepl</Text>
-        </View>
+        <BookCard />
     )
 }
 export default Book;
