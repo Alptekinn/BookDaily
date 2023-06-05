@@ -3,31 +3,38 @@ import { View, Text, TextInput, Button, Alert } from "react-native";
 import styles from "../styles";
 import { useNavigation } from "@react-navigation/native";
 import Login from "./loginPage";
-import users from "../Data/UserData";
-
+import { registers } from "../Services/AccountService";
 const Register = () => {
   const [name, onChangeName] = React.useState("");
   const [surname, onChangeSurname] = React.useState("");
   const [mail, onChangeMail] = React.useState("");
-  const [username, onChangeText] = React.useState("");
+  const [nickname, onChangeText] = React.useState("");
   const [pass, onChangePass] = React.useState("");
   const navigation = useNavigation();
 
-  const handleSignup = () => {
-    const newUser = {
-      id: users.length + 1,
-      ad: name,
-      soyad: surname,
-      e_posta: mail,
-      kullaniciAdi: username,
-      sifre: pass,
-      profileImage :"https://doodleipsum.com/600?shape=circle"
-    };
-    
-  users.push(newUser);
-  Alert.alert("Kayıt başarılı")
-  navigation.navigate('Login')
-  }
+
+
+  const handleRegister = async () => {
+    try {
+      const User = {
+        Name: name,
+        Surname: surname,
+        Mail: mail,
+        Nickname: nickname,
+        Password: pass,
+        ProfileImage: "https://doodleipsum.com/600?shape=circle",
+        Followers: [], 
+        Followed: [], 
+      };
+
+      await registers(User);
+      console.log('Kullanıcı başarıyla kaydedildi.');
+      navigation.navigate('Login')
+    } catch (error) {
+      console.error('Kayıt işlemi başarısız oldu.', error);
+    }
+  };
+  
 
   return (
     <View style={styles.loginContainer}>
@@ -53,7 +60,7 @@ const Register = () => {
       <TextInput
         style={styles.input}
         onChangeText={onChangeText}
-        value={username}
+        value={nickname}
         placeholder="Kullanıcı Adı"
       />
       <TextInput
@@ -66,7 +73,7 @@ const Register = () => {
       <View style={styles.fixToText}>
         <Button
           title="Kayıt Ol"
-          onPress={() => handleSignup()}
+          onPress={() => handleRegister()}
         />
         <Button
           color="#555"

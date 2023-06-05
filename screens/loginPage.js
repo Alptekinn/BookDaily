@@ -4,20 +4,25 @@ import styles from "../styles";
 import Register from "./registerPage";
 import { useNavigation } from '@react-navigation/native'
 import Home from "./homePage";
-import {userLogin} from '../Helper/LoginHelper';
+import { userlogin } from "../Services/AccountService";
 
 const Login = () => {
   const [text, onChangeText] = React.useState("");
   const [pass, onChangePass] = React.useState("");
 
+  
   const handleLogin = () =>{
-    const foundUser = userLogin(text, pass);
-    if (foundUser) {
+    userlogin(text,pass)
+    .then(data=>  {
+      Alert.alert("Başarılı")
       navigation.navigate('Home')
-    }
-    else{
-      Alert.alert('Kullanıcı Adı şifre yanlış')
-    }
+    })
+    .catch(error => {
+      Alert.alert("Kullanıcı Adı Şifre Yanlış")
+      console.error('Login hatası:', error);
+      
+    });
+    
   }
 
   const navigation = useNavigation();
@@ -45,8 +50,8 @@ const Login = () => {
         />
         <Button
           title="Giriş Yap"
-          onPress={() => navigation.navigate('Home') }
-          //onPress={() => handleLogin()}
+         // onPress={() => navigation.navigate('Home') }
+          onPress={() => handleLogin()}
         />
       </View>
     </View>

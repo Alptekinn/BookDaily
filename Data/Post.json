@@ -1,0 +1,122 @@
+[
+    {
+        "PostID": 1,
+        "UserID": 1,
+        "BookID": 1,
+        "BookComment": "Bu kitabı çok beğendim!",
+        "LikeCount": 10,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 2,
+        "UserID": 2,
+        "BookID": 2,
+        "BookComment": "Harika bir roman!",
+        "LikeCount": 8,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 3,
+        "UserID": 3,
+        "BookID": 3,
+        "BookComment": "Çok etkileyici bir hikaye!",
+        "LikeCount": 15,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 4,
+        "UserID": 4,
+        "BookID": 4,
+        "BookComment": "Bu kitap beni hayal kırıklığına uğrattı.",
+        "LikeCount": 2,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 5,
+        "UserID": 5,
+        "BookID": 5,
+        "BookComment": "Muhteşem bir kurgu!",
+        "LikeCount": 20,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 6,
+        "UserID": 6,
+        "BookID": 6,
+        "BookComment": "Okuduğum en iyi kitaplardan biri!",
+        "LikeCount": 12,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 7,
+        "UserID": 7,
+        "BookID": 7,
+        "BookComment": "Bu romanı tavsiye ederim!",
+        "LikeCount": 6,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 8,
+        "UserID": 8,
+        "BookID": 8,
+        "BookComment": "Sürükleyici bir polisiye!",
+        "LikeCount": 9,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 9,
+        "UserID": 9,
+        "BookID": 9,
+        "BookComment": "Bu kitap beni derinden etkiledi.",
+        "LikeCount": 18,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 10,
+        "UserID": 10,
+        "BookID": 10,
+        "BookComment": "Bir solukta okudum!",
+        "LikeCount": 13,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 11,
+        "UserID": 11,
+        "BookID": 11,
+        "BookComment": "Bu kitap beni düşündürdü.",
+        "LikeCount": 7,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 12,
+        "UserID": 12,
+        "BookID": 12,
+        "BookComment": "Başarılı bir bilim kurgu romanı!",
+        "LikeCount": 11,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 13,
+        "UserID": 13,
+        "BookID": 13,
+        "BookComment": "Çok güzel bir anlatımı var.",
+        "LikeCount": 14,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 14,
+        "UserID": 14,
+        "BookID": 14,
+        "BookComment": "Bu kitap benim favorim!",
+        "LikeCount": 25,
+        "CommentCount": 15
+    },
+    {
+        "PostID": 15,
+        "UserID": 15,
+        "BookID": 15,
+        "BookComment": "Bu romanı tekrar okumak istiyorum.",
+        "LikeCount": 17,
+        "CommentCount": 15
+    }
+]
