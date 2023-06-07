@@ -10,12 +10,14 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/FontAwesome5";
+import { UserProvider } from './Context/UserContext';
 function Tabs() {
 
 
 
   const Tab = createBottomTabNavigator();
   return (
+    <UserProvider>
     <Tab.Navigator>
       <Tab.Screen
         name="Home"
@@ -23,9 +25,9 @@ function Tabs() {
         options={{
           tabBarIcon: () => <Icon name={"home"} size={20}></Icon>,
           tabBarShowLabel: false,
-          headerTitle:'Book Daily'
+          headerTitle: 'Book Daily'
         }}
-        
+
       />
       <Tab.Screen
         name="Book"
@@ -33,7 +35,7 @@ function Tabs() {
         options={{
           tabBarIcon: () => <Icon name={"book"} size={20}></Icon>,
           tabBarShowLabel: false,
-          headerTitle:'Kitaplar'
+          headerTitle: 'Kitaplar'
         }}
       />
       <Tab.Screen
@@ -42,7 +44,7 @@ function Tabs() {
         options={{
           tabBarIcon: () => <Icon name={"bell"} size={20}></Icon>,
           tabBarShowLabel: false,
-          headerTitle:'Bildirimler'
+          headerTitle: 'Bildirimler'
         }}
       />
       <Tab.Screen
@@ -51,34 +53,37 @@ function Tabs() {
         options={{
           tabBarIcon: () => <Icon name={"user"} size={20}></Icon>,
           tabBarShowLabel: false,
-          headerTitle:'Profilim'
+          headerTitle: 'ahmet123'
         }}
       />
     </Tab.Navigator>
+    </UserProvider>
   );
 }
 
 function App() {
   const Stack = createStackNavigator();
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Register" component={Register} />
-        <Stack.Screen
-          name="Home"
-          component={Tabs}
-          options={{
-            title: "BookDaily",
-            headerStyle: {
-              backgroundColor: "#1e42f4",
-            },
-            headerTintColor: "#fff",
-            headerShown: false,
-          }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <UserProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Login">
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Register" component={Register} />
+          <Stack.Screen
+            name="Home"
+            component={Tabs}
+            options={{
+              title: "BookDaily",
+              headerStyle: {
+                backgroundColor: "#1e42f4",
+              },
+              headerTintColor: "#fff",
+              headerShown: false,
+            }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </UserProvider>
   );
 }
 export default App;

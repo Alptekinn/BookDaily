@@ -23,7 +23,7 @@ app.post('/login', (req, res) => {
         return res.status(401).json({ error: 'Geçersiz kullanıcı adı veya şifre' });
     }
 
-    return res.json({ message: 'Giriş başarılı', user: user });
+    return res.json({user: user });
 });
 //////////////////////////Register
 app.post('/register', (req, res) => {
@@ -39,7 +39,7 @@ app.post('/register', (req, res) => {
 
     fs.writeFileSync('../Data/User.json', JSON.stringify(users));
   
-    res.status(200).json({ message: 'Kullanıcı başarıyla kaydedildi.', user: newUserWithId });
+    res.status(200).json({ user: newUserWithId });
   });
 //////////////Kitap Verileri
 app.get('/books', (req, res) => {
@@ -52,27 +52,47 @@ app.get('/post', (req, res) => {
     res.json(post);
 });
 
-//userdaki password verisini gizler
-users = users.map(user => {
-    const { Password, ...userWithoutPassword } = user;
-    return userWithoutPassword;
-});
+
 
 app.get('/users', (req, res) => {
     res.json(users);
 });
 
 
-app.post('/notifications', (req, res) => {
-    const notificationData = req.body;
+
+  app.get('/api/posts/:userID', (req, res) => {
+    const userID = parseInt(req.params.userID);
+    
+    const user = users.find(user => user.UserID === userID);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
   
-    // Bildirim verilerini kullanarak gerekli işlemleri yapın
-    // Örneğin, bildirimi alıcı kullanıcılara göndermek için Firebase Cloud Messaging (FCM) gibi bir hizmeti kullanabilirsiniz
+    const followedUserIDs = user.Followed;
   
-    res.status(200).json({ message: 'Bildirim başarıyla gönderildi.' });
+    const followedPosts = post.filter(post => followedUserIDs.includes(post.UserID));
+  
+    const postsWithUserInfo = followedPosts.map(post => {
+      const bookID = post.BookID;
+      const book = books.find(book => book.BookID === bookID);
+  
+      return {
+        PostID: post.PostID,
+        UserID: post.UserID,
+        UserName: user.Name,
+        UserSurname: user.Surname,
+        ProfileImage: user.ProfileImage,
+        BookID: bookID,
+        BookName: book ? book.BookName : null,
+        BookComment: post.BookComment,
+        LikeCount: post.LikeCount,
+        CommentCount: post.CommentCount
+      };
+    });
+  
+    res.json(postsWithUserInfo);
   });
-
-
+  
 app.listen(port, () => {
     console.log(`API servisi ${port} numaralı portta çalışıyor.`);
 });

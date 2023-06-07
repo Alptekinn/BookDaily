@@ -5,10 +5,18 @@
         "Surname": "Yılmaz",
         "Mail": "ahmet@example.com",
         "Nickname": "ahmet123",
-        "Password": "password123",
-        "ProfileImage": "image123",
-        "Followers": [2, 3, 4],
-        "Followed" : [6, 3, 5]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            2,
+            3,
+            4
+        ],
+        "Followed": [
+            6,
+            3,
+            5
+        ]
     },
     {
         "UserID": 2,
@@ -16,10 +24,18 @@
         "Surname": "Demir",
         "Mail": "ayse@example.com",
         "Nickname": "ayse456",
-        "Password": "password456",
-        "ProfileImage": "image123",
-        "Followers": [1, 3, 5],
-        "Followed" : [6, 3, 5]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            1,
+            3,
+            5
+        ],
+        "Followed": [
+            6,
+            3,
+            5
+        ]
     },
     {
         "UserID": 3,
@@ -27,10 +43,18 @@
         "Surname": "Kara",
         "Mail": "mehmet@example.com",
         "Nickname": "mehmet789",
-        "Password": "password789",
-        "ProfileImage": "image123",
-        "Followers": [1, 2, 4],
-        "Followed" : [14, 3, 5]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            1,
+            2,
+            4
+        ],
+        "Followed": [
+            14,
+            3,
+            5
+        ]
     },
     {
         "UserID": 4,
@@ -38,10 +62,18 @@
         "Surname": "Yıldız",
         "Mail": "fatma@example.com",
         "Nickname": "fatma321",
-        "Password": "password321",
-        "ProfileImage": "image123",
-        "Followers": [1, 3, 5],
-        "Followed" : [7, 3, 5]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            1,
+            3,
+            5
+        ],
+        "Followed": [
+            7,
+            3,
+            5
+        ]
     },
     {
         "UserID": 5,
@@ -49,10 +81,18 @@
         "Surname": "Aydın",
         "Mail": "ali@example.com",
         "Nickname": "ali789",
-        "Password": "password789",
-        "ProfileImage": "image123",
-        "Followers": [2, 4, 6],
-        "Followed" : [5, 7, 8]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            2,
+            4,
+            6
+        ],
+        "Followed": [
+            5,
+            7,
+            8
+        ]
     },
     {
         "UserID": 6,
@@ -60,10 +100,18 @@
         "Surname": "Erdoğan",
         "Mail": "zeynep@example.com",
         "Nickname": "zeynep123",
-        "Password": "password123",
-        "ProfileImage": "image123",
-        "Followers": [5, 7, 8],
-        "Followed" : [2, 4, 6]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            5,
+            7,
+            8
+        ],
+        "Followed": [
+            2,
+            4,
+            6
+        ]
     },
     {
         "UserID": 7,
@@ -71,10 +119,18 @@
         "Surname": "Aydın",
         "Mail": "hakan@example.com",
         "Nickname": "hakan456",
-        "Password": "password456",
-        "ProfileImage": "image123",
-        "Followers": [6, 8, 9],
-        "Followed" : [6, 8, 9]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            6,
+            8,
+            9
+        ],
+        "Followed": [
+            6,
+            8,
+            9
+        ]
     },
     {
         "UserID": 8,
@@ -82,10 +138,18 @@
         "Surname": "Koç",
         "Mail": "aylin@example.com",
         "Nickname": "aylin789",
-        "Password": "password789",
-        "ProfileImage": "image123",
-        "Followers": [6, 7, 10],
-        "Followed" : [6, 7, 10]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            6,
+            7,
+            10
+        ],
+        "Followed": [
+            6,
+            7,
+            10
+        ]
     },
     {
         "UserID": 9,
@@ -93,10 +157,18 @@
         "Surname": "Yılmaz",
         "Mail": "mert@example.com",
         "Nickname": "mert321",
-        "Password": "password321",
-        "ProfileImage": "image123",
-        "Followers": [7, 10, 11],
-        "Followed" : [7, 10, 11]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            7,
+            10,
+            11
+        ],
+        "Followed": [
+            7,
+            10,
+            11
+        ]
     },
     {
         "UserID": 10,
@@ -104,10 +176,18 @@
         "Surname": "Sönmez",
         "Mail": "elif@example.com",
         "Nickname": "elif789",
-        "Password": "password789",
-        "ProfileImage": "image123",
-        "Followers": [8, 9, 12],
-        "Followed" : [8, 9, 12]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            8,
+            9,
+            12
+        ],
+        "Followed": [
+            8,
+            9,
+            12
+        ]
     },
     {
         "UserID": 11,
@@ -115,10 +195,18 @@
         "Surname": "Demir",
         "Mail": "can@example.com",
         "Nickname": "can123",
-        "Password": "password123",
-        "ProfileImage": "image123",
-        "Followers": [9, 12, 13],
-        "Followed" : [9, 12, 13]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            9,
+            12,
+            13
+        ],
+        "Followed": [
+            9,
+            12,
+            13
+        ]
     },
     {
         "UserID": 12,
@@ -126,10 +214,18 @@
         "Surname": "Öztürk",
         "Mail": "selin@example.com",
         "Nickname": "selin456",
-        "Password": "password456",
-        "ProfileImage": "image123",
-        "Followers": [10, 11, 14],
-        "Followed" : [11, 14, 15]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            10,
+            11,
+            14
+        ],
+        "Followed": [
+            11,
+            14,
+            15
+        ]
     },
     {
         "UserID": 13,
@@ -137,10 +233,18 @@
         "Surname": "Aktaş",
         "Mail": "emre@example.com",
         "Nickname": "emre789",
-        "Password": "password789",
-        "ProfileImage": "image123",
-        "Followers": [11, 14, 15],
-        "Followed" : [10, 11, 14]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            11,
+            14,
+            15
+        ],
+        "Followed": [
+            10,
+            11,
+            14
+        ]
     },
     {
         "UserID": 14,
@@ -148,10 +252,18 @@
         "Surname": "Yılmaz",
         "Mail": "nazli@example.com",
         "Nickname": "nazli321",
-        "Password": "password321",
-        "ProfileImage": "image123",
-        "Followers": [12, 13, 15],
-        "Followed" : [12, 13, 15]
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            12,
+            13,
+            15
+        ],
+        "Followed": [
+            12,
+            13,
+            15
+        ]
     },
     {
         "UserID": 15,
@@ -159,9 +271,24 @@
         "Surname": "Kaya",
         "Mail": "eren@example.com",
         "Nickname": "eren789",
-        "Password": "password789",
-        "ProfileImage": "image123",
-        "Followers": [13, 14, 1],
-        "Followed" : []
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [
+            13,
+            14,
+            1
+        ],
+        "Followed": []
+    },
+    {
+        "UserID": 16,
+        "Name": "Test1",
+        "Surname": "Sur",
+        "Mail": "Mail.com",
+        "Nickname": "Sd",
+        "Password": "12",
+        "ProfileImage": "https://doodleipsum.com/600?shape=circle",
+        "Followers": [],
+        "Followed": []
     }
 ]

@@ -6,6 +6,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
   },
+  line: {
+    marginTop:17,
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
+  },
+  cardMargin: {
+    marginBottom: 20,
+  },
+
+  test: {
+    marginBottom: 180,
+
+  },
   homeContainer: {
     flex: 1,
     marginHorizontal: 20,
@@ -28,9 +41,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 30,
   },
-  smallTitle:{
-    fontSize:16,
-    fontWeight:'bold'
+  smallTitle: {
+    fontSize: 16,
+    fontWeight: 'bold'
   },
   cardArea: {
     flex: 1,
@@ -70,7 +83,7 @@ const styles = StyleSheet.create({
   },
   marginR45: {
     marginRight: 45,
-    marginLeft:10,
+    marginLeft: 10,
   },
   row: {
     flexDirection: "row",
